@@ -7161,3 +7161,9 @@ background-color: #888888;
 .text-red-600{
     color:red;
 }
+.wrap-pagination-info{
+    text-align: center;
+}
+.wrap-pagination-info span{
+    margin: 15px;
+}
