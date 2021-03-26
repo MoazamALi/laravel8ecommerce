@@ -3,7 +3,14 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="panel panel-default">
-                    <div class="panel-heading">All Products</div>
+                    <div class="panel-heading">
+                        <div class="col-md-6">All Products</div>
+                        <div class="col-md-6">
+                            <a href="{{route('admin.addproduct')}}" class="btn btn-primary pull-right">
+                                Add Product
+                            </a>
+                        </div>
+                    </div>
                     <div class="panel-body">
                         <table class="table table-striped">
                             <thead>
