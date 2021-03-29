@@ -35,7 +35,16 @@
                                         <td>{{$product->regular_price}}</td>
                                         <td>{{$product->Category->name}}</td>
                                         <td>{{$product->created_at}}</td>
-                                        <td></td>
+                                        <td>
+                                            <a href="{{ route('admin.editproduct',['product_slug'=>$product->slug]) }}" >
+                                                <i class="fa fa-edit fa-2x"></i>
+                                                Edit
+                                            </a>
+                                            <a href="#" wire:click.prevent="deleteProduct({{$product->id}})" style="margin-left: 10px;">
+                                                <i class="fa fa-times fa-2x text-danger"></i>
+                                                Delete
+                                            </a>
+                                        </td>
                                     </tr>
                                 @endforeach
                             </tbody>
